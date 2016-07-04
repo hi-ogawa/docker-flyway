@@ -1,0 +1,15 @@
+version: "2"
+
+services:
+  flyway:
+    build: ../
+    volumes:
+      - ./flyway.conf:/flyway-4.0.1/conf/flyway.conf
+      - ./sql:/flyway-4.0.1/sql
+
+  postgres:
+    image: postgres:9.5.3
+    # by default
+    # - dbname:   postgres
+    # - username: postgres
+    # - password: (blank)
