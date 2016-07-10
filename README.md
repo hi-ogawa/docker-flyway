@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/hi-ogawa/docker-flyway.svg?branch=master)](https://travis-ci.org/hi-ogawa/docker-flyway)
+
 # Dockerized Flyway
 
 Example (see `test` directory):
