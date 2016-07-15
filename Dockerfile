@@ -7,7 +7,5 @@ RUN mv /flyway-4.0.1 /flyway
 ENV PATH /flyway:$PATH
 WORKDIR /flyway
 
-COPY entrypoint.sh /entrypoint.sh
-ENTRYPOINT ["/entrypoint.sh"]
-
+ENTRYPOINT ["flyway"]
 CMD ["migrate"]

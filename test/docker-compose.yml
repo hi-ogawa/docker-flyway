@@ -3,12 +3,9 @@ version: "2"
 services:
   flyway:
     build: ../
-    environment:
-      FLYWAY_URL: jdbc:postgresql://postgres:5432/postgres
-      FLYWAY_USER: postgres
-      FLYWAY_PASSWORD:
     volumes:
       - ./sql:/flyway/sql
+      - ./flyway.conf:/flyway/flyway.conf
 
   postgres:
     image: postgres:9.5.3
