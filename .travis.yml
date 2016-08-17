@@ -24,7 +24,7 @@ script:
   - cd test
   - docker-compose up -d postgres
   - sleep 5
-  - docker-compose run flyway info
+  - docker-compose run flyway info -X
   - docker-compose run flyway
-  - docker-compose run flyway info
+  - docker-compose run flyway info -X
   - docker-compose run postgres psql -h postgres -p 5432 -U postgres postgres -c "\dt"
